@@ -1,0 +1,28 @@
+{
+  "name": "fitclock",
+  "version": "1.0.3",
+  "private": true,
+  "license": "GPL",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.2.0-pre.1",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "8873076f-99ef-4463-b25b-bb588def3501",
+    "appType": "clockface",
+    "appDisplayName": "LoftySnowOne",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "atlas",
+      "hera"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}

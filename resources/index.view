@@ -1,0 +1,9 @@
+<svg class="background">
+  <text id="dayLabel" />
+  <text id="batteryLabel" />
+  <text id="dateLabel" />
+  <text id="timeLabel" />
+  <text id="amPmLabel" />
+  <text id="tempLabel" />
+  <text id="weatherLabel" />
+</svg>
