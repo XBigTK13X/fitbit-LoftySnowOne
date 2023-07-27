@@ -45,7 +45,7 @@ clock.ontick = (evt) => {
   let year = today.getFullYear();
   timeLabel.text = `${hours}:${mins}`;
   amPmLabel.text = postfix;
-  dateLabel.text = `${monthName} ${dayNumber}, ${year}`;
+  dateLabel.text = `${month}/${dayNumber}/${year}`;
   dayLabel.text = dayName
   tempLabel.text = temp
   weatherLabel.text = weather

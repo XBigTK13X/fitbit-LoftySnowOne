@@ -49,35 +49,36 @@ const weatherSimple = {
    Windy: 'Wind'
 }
 function updateWeather(){
-if (companion.permissions.granted("access_location")) {
-   weather
-     .getWeatherData()
-     .then((data) => {
-       if (data.locations.length > 0) {
-         const temp = Math.floor(data.locations[0].currentWeather.temperature);
-         const cond = data.locations[0].currentWeather.weatherCondition;
-         const loc = data.locations[0].name;
-         const unit = data.temperatureUnit;
-         const condDisplay = weatherSimple[weatherCondition(cond)]
-         if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
-            messaging.peerSocket.send({temp,cond,loc,unit, condDisplay});
-          } else {
+  if (companion.permissions.granted("access_location")) {
+    weather
+      .getWeatherData()
+      .then((data) => {
+        if (data.locations.length > 0) {
+          const temp = Math.floor(data.locations[0].currentWeather.temperature);
+          const cond = data.locations[0].currentWeather.weatherCondition;
+          const loc = data.locations[0].name;
+          const unit = data.temperatureUnit;
+          const condDisplay = weatherSimple[weatherCondition(cond)]
+          if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
+              messaging.peerSocket.send({temp,cond,loc,unit, condDisplay});
+            } else {
+            }
+        }
+      })
+      .catch((ex) => {
+          if(ex){
+              console.error(ex);
           }
-       }
-     })
-     .catch((ex) => {
-        if(ex){
-            console.error(ex);
-         }
-     });
-}
+      });
+  }
 }
 messaging.peerSocket.onopen = updateWeather
 companion.addEventListener("readystatechanged", updateWeather)
 companion.addEventListener("wakeinterval", updateWeather);
-updateWeather()
 messaging.peerSocket.onmessage = evt => {
    if(evt && evt.action){
     updateWeather()
    }
   };
+companion.wakeInterval = 1000 * 60 * 15;
+updateWeather()

@@ -3,71 +3,71 @@
 }
 
 #timeLabel {
-  font-size: 100;
+  font-size: 135;
   font-family: System-Bold;
   text-length: 32;
   text-anchor: middle;
   x: 50%;
-  y: 50%+35;
-  fill: #A8A8A8;
-}
-#amPmLabel {
-  font-size: 20;
-  font-family: System-Bold;
-  text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 70%+10;
+  y: 50%+50;
   fill: #A8A8A8;
 }
 
 #batteryLabel {
-  font-size: 20;
-  font-family: System-Bold;
+  font-size: 30;
+  font-family: System-Regular;
   text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 30%+10;
+  text-anchor: end;
+  x: 89%;
+  y: 16%+15;
   fill: #A8A8A8;
 }
 
 #dayLabel {
-  font-size: 20;
-  font-family: System-Bold;
+  font-size: 30;
+  font-family: System-Regular;
   text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 10%+10;
+  text-anchor: start;
+  x: 11%;
+  y: 11%+15;
   fill: #A8A8A8;
 }
 
 #dateLabel {
-  font-size: 20;
-  font-family: System-Bold;
+  font-size: 30;
+  font-family: System-Regular;
   text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 20%+10;
+  text-anchor: start;
+  x: 11%;
+  y: 21%+15;
   fill: #A8A8A8;
 }
 
 #tempLabel {
-  font-size: 20;
-  font-family: System-Bold;
+  font-size: 30;
+  font-family: System-Regular;
   text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 90%+10;
+  text-anchor: start;
+  x: 11%;
+  y: 78%+15;
   fill: #A8A8A8;
 }
 
 #weatherLabel {
-  font-size: 20;
-  font-family: System-Bold;
+  font-size: 30;
+  font-family: System-Regular;
   text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 80%+10;
+  text-anchor: start;
+  x: 11%;
+  y: 88%+15;
   fill: #A8A8A8;
 }
 
+#amPmLabel {
+  font-size: 30;
+  font-family: System-Regular;
+  text-length: 32;
+  text-anchor: end;
+  x: 88%;
+  y: 84%+15;
+  fill: #A8A8A8;
+}
