@@ -1,5 +1,5 @@
 .background {
-  viewport-fill: #4C0254;
+  viewport-fill: #28002d;
 }
 
 #timeLabel {
@@ -16,49 +16,29 @@
   font-size: 30;
   font-family: System-Regular;
   text-length: 32;
-  text-anchor: end;
-  x: 89%;
-  y: 16%+15;
+  text-anchor: start;
+  x: 11%;
+  y: 84%+15;
   fill: #A8A8A8;
 }
 
 #dayLabel {
-  font-size: 30;
+  font-size: 40;
   font-family: System-Regular;
   text-length: 32;
-  text-anchor: start;
-  x: 11%;
-  y: 11%+15;
+  text-anchor: middle;
+  x: 50%;
+  y: 7%+20;
   fill: #A8A8A8;
 }
 
 #dateLabel {
-  font-size: 30;
+  font-size: 40;
   font-family: System-Regular;
   text-length: 32;
-  text-anchor: start;
-  x: 11%;
-  y: 21%+15;
-  fill: #A8A8A8;
-}
-
-#tempLabel {
-  font-size: 30;
-  font-family: System-Regular;
-  text-length: 32;
-  text-anchor: start;
-  x: 11%;
-  y: 78%+15;
-  fill: #A8A8A8;
-}
-
-#weatherLabel {
-  font-size: 30;
-  font-family: System-Regular;
-  text-length: 32;
-  text-anchor: start;
-  x: 11%;
-  y: 88%+15;
+  text-anchor: middle;
+  x: 50%;
+  y: 25%+20;
   fill: #A8A8A8;
 }
 

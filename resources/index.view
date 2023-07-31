@@ -4,6 +4,4 @@
   <text id="dateLabel" />
   <text id="timeLabel" />
   <text id="amPmLabel" />
-  <text id="tempLabel" />
-  <text id="weatherLabel" />
 </svg>
